@@ -9,7 +9,7 @@ const SOLID_ICON_URL = 'https://solidproject.org/assets/img/solid-emblem.svg'
 /**
  * menu elements
 */
-const USER_GUIDE_MENU_ITEM = 'User guide'
+const USER_GUIDE_MENU_ITEM = 'User guide HEELOO!!!'
 const REPORT_A_PROBLEM_MENU_ITEM = 'Report a problem'
 const SHOW_YOUR_PROFILE_MENU_ITEM = 'Show your profile'
 const LOG_OUT_MENU_ITEM = 'Log out'
@@ -19,7 +19,11 @@ const LOG_OUT_MENU_ITEM = 'Log out'
 const USER_GUIDE_MENU_URL = 'https://solidos.github.io/userguide/'
 const REPORT_A_PROBLEM_MENU_URL = 'https://github.com/solidos/solidos/issues'
 
-export async function createHeader (store, outliner) {
+export async function createHeader(store, outliner) {
+  console.log("------ I AM HERE in the code again ,ajgsdkasjgfdlaskj -----")
+  console.log(store)
+  console.log(outliner)
+  alert("ANNOYING")
   initHeader(store, await setUserMenu(outliner), setHeaderOptions())
 }
 
